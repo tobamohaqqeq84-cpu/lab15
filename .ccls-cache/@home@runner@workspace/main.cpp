@@ -13,7 +13,7 @@
     private:   
          string title;
          int yearReleased;
-         string title;
+         string screenWriter;
     
     public:
        void setWriter(string writer) { screenWriter = writer;}
@@ -29,7 +29,7 @@
 
      cout << "Title: " << title << endl;
      cout << "Year published: " << yearReleased << endl;
-     cout << "Author: " << author << endl << endl;
+     cout << "Author: " << screenWriter << endl << endl;
     
   }
 };
@@ -37,9 +37,8 @@
 int main() {
 ifstream inFile("input.txt");
      if (!inFile) {
-         cerr << "Error: Unable to open the file"; << endl;
-             return 1; }
-     
+         cerr << "Error: Unable to open the file" << endl;
+         return 1;
      }
 Movie movie[4];
 string writer, title;
@@ -55,7 +54,7 @@ for (int i=0; i<4; i++){
 
      Movie temp;
      temp.setTitle(title);
-     temp.setYear(year);
+     temp.setyear(year);
      temp.setWriter(writer);
 
      movie[i] = temp;
