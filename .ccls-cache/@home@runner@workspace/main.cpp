@@ -9,13 +9,15 @@
 #include<fstream>
  using namespace std;
 
-  class Movie{
+  class Movie{ // Movie class stores info about a movie
+
     private:   
          string title;
          int yearReleased;
          string screenWriter;
     
-    public:
+    public:     // setters
+
        void setWriter(string writer) { screenWriter = writer;}
        string getWriter() {return screenWriter;}
 
