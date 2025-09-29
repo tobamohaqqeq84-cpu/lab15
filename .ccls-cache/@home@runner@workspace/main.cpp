@@ -60,6 +60,15 @@ for (int i=0; i<4; i++){
 
      movie[i] = temp;
 }
+     inFile.close();
+       for(int i=0; i<4;i++) {movie[i].print();
+                              
+            }
+
+
+return 0;
+}
+
 
 
 
